@@ -1,0 +1,123 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Inflamation X", HidePremium = false, SaveConfig = false, ConfigFolder = "Config"})
+
+local Tab = Window:MakeTab({
+	Name = "Main Functions",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+OrionLib:MakeNotification({
+	Name = "Inflamation UI",
+	Content = "Inflamation successfully executed, coems.",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+
+Tab:AddButton({
+	Name = "Heavy Attack Once",
+	Callback = function()
+      		game:GetService("Players").LocalPlayer.Character.sword.HeavyAttack:FireServer()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Heavy Attack hit:0.025",
+	Callback = function()
+      		while wait(0.025) do 
+		game:GetService("Players").LocalPlayer.Character.sword.HeavyAttack:FireServer()
+	end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Purchase Shield",
+	Callback = function()
+local args = {
+    [1] = "shield",
+    [2] = false,
+    [3] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Shop"):FireServer(unpack(args))
+	end    
+})
+
+Tab:AddButton({
+	Name = "Auto Block [ REQUIRES SHIELD ]",
+	Callback = function()
+	while wait(1) do
+	local args = {
+	    [1] = "On"
+	}
+
+	game:GetService("Players").LocalPlayer.Character.Shield.RemoteEvent:FireServer(unpack(args))
+	end
+	end
+})
+
+Tab:AddButton({
+	Name = "Infinite Yield (not ours)",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end
+})
+
+Tab:AddButton({
+	Name = "Purchase Sword",
+	Callback = function()
+	local args = {
+    [1] = "sword",
+    [2] = false,
+    [3] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Shop"):FireServer(unpack(args))
+
+	end
+})
+
+Tab:AddButton({
+	Name = "Purchase Bow",
+	Callback = function()
+	local args = {
+    [1] = "bow",
+    [2] = false,
+    [3] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Shop"):FireServer(unpack(args))
+
+	end
+})
+
+Tab:AddButton({
+	Name = "Purchase Axe",
+	Callback = function()
+	local args = {
+    [1] = "ax",
+    [2] = false,
+    [3] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Shop"):FireServer(unpack(args))
+
+	end
+})
+
+Tab:AddButton({
+	Name = "Purchase Bomb",
+	Callback = function()
+	local args = {
+    [1] = "bomb",
+    [2] = false,
+    [3] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Shop"):FireServer(unpack(args))
+
+	end
+})
