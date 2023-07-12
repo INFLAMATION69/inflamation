@@ -121,3 +121,10 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Shop"
 
 	end
 })
+
+Tab:AddButton({
+	Name = "Inflamation Reach",
+	Callback = function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/40XgddWr'),true))()
+	end
+})
