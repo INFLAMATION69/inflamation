@@ -18,14 +18,14 @@ OrionLib:MakeNotification({
 })
 
 Tab:AddButton({
-	Name = "Heavy Attack Once",
+	Name = "Heavy Attack",
 	Callback = function()
       		game:GetService("Players").LocalPlayer.Character.sword.HeavyAttack:FireServer()
   	end    
 })
 
 Tab:AddButton({
-	Name = "Heavy Attack hit:0.025",
+	Name = "Kill Sword [ INSANE LOL ]",
 	Callback = function()
       		while wait(0.025) do 
 		game:GetService("Players").LocalPlayer.Character.sword.HeavyAttack:FireServer()
@@ -33,18 +33,6 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddButton({
-	Name = "Purchase Shield",
-	Callback = function()
-local args = {
-    [1] = "shield",
-    [2] = false,
-    [3] = true
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Shop"):FireServer(unpack(args))
-	end    
-})
 
 Tab:AddButton({
 	Name = "Auto Block [ REQUIRES SHIELD ]",
@@ -59,15 +47,44 @@ Tab:AddButton({
 	end
 })
 
+
+local Tab = Window:MakeTab({
+	Name = "Teleports",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
 Tab:AddButton({
-	Name = "Infinite Yield (not ours)",
+	Name = "Teleport to Border Gate",
 	Callback = function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-953.293274, 32.9999962, -11.9127264, -0.0239616893, 5.59910269e-08, 0.999712884, 6.98343072e-08, 1, -5.43332774e-08, -0.999712884, 6.85123425e-08, -0.0239616893)
 	end
 })
 
 Tab:AddButton({
-	Name = "Purchase Sword",
+	Name = "Teleport to Evil Brick God",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1203.4021, 34.0000496, 351.300568, -0.0049793236, -7.95214206e-09, 0.999987602, -1.00046606e-07, 1, 7.45407025e-09, -0.999987602, -1.00008251e-07, -0.0049793236)
+	end
+})
+
+Tab:AddButton({
+	Name = "Teleport to Brick God",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1530.80042, 110.000038, 486.43634, 0.999944329, -7.36276651e-10, 0.0105492352, -9.54563945e-12, 1, 7.06991301e-08, -0.0105492352, -7.06952932e-08, 0.999944329)
+	end
+})
+
+local Tab = Window:MakeTab({
+	Name = "Buy Stuff",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Buy Sword",
 	Callback = function()
 	local args = {
     [1] = "sword",
@@ -81,7 +98,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Shop"
 })
 
 Tab:AddButton({
-	Name = "Purchase Bow",
+	Name = "Buy Bow",
 	Callback = function()
 	local args = {
     [1] = "bow",
@@ -95,7 +112,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Shop"
 })
 
 Tab:AddButton({
-	Name = "Purchase Axe",
+	Name = "Buy Axe",
 	Callback = function()
 	local args = {
     [1] = "ax",
@@ -109,7 +126,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Shop"
 })
 
 Tab:AddButton({
-	Name = "Purchase Bomb",
+	Name = "Buy Bomb",
 	Callback = function()
 	local args = {
     [1] = "bomb",
@@ -123,8 +140,36 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Shop"
 })
 
 Tab:AddButton({
+	Name = "Buy Shield",
+	Callback = function()
+local args = {
+    [1] = "shield",
+    [2] = false,
+    [3] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Shop"):FireServer(unpack(args))
+	end    
+})
+
+
+
+local Tab = Window:MakeTab({
+	Name = "Other Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
 	Name = "Inflamation Reach",
 	Callback = function()
 loadstring(game:HttpGet(('https://pastebin.com/raw/40XgddWr'),true))()
+	end
+})
+
+Tab:AddButton({
+	Name = "Infinite Yield (not ours)",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 	end
 })
