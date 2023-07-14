@@ -226,3 +226,20 @@ Tab:AddButton({
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 	end
 })
+
+local Tab = Window:MakeTab({
+	Name = "Client Sided Stuff",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddTextbox({
+	Name = "ServerMessage [client]",
+	Default = "message you want",
+	TextDisappear = true,
+	Callback = function(message69)
+		game:GetService("ReplicatedStorage").ServerMessage.Value = (message69)
+	end	  
+})
+
