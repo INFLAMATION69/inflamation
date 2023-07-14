@@ -57,14 +57,10 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-
-
-Tab:AddButton({
-	Name = "Teleport to Border Gate",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-953.293274, 32.9999962, -11.9127264, -0.0239616893, 5.59910269e-08, 0.999712884, 6.98343072e-08, 1, -5.43332774e-08, -0.999712884, 6.85123425e-08, -0.0239616893)
-	end
+local Section = Tab:AddSection({
+	Name = "Brick Gods"
 })
+
 
 Tab:AddButton({
 	Name = "Teleport to Evil Brick God",
@@ -77,6 +73,17 @@ Tab:AddButton({
 	Name = "Teleport to Brick God",
 	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1509.64832, 115.999939, 524.155151, 0.97005558, -3.81395324e-08, 0.242883027, 3.57084069e-08, 1, 1.44118451e-08, -0.242883027, -5.30732525e-09, 0.97005558)
+	end
+})
+
+local Section = Tab:AddSection({
+	Name = "Bricklandia"
+})
+
+Tab:AddButton({
+	Name = "Teleport to Border Gate",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-953.293274, 32.9999962, -11.9127264, -0.0239616893, 5.59910269e-08, 0.999712884, 6.98343072e-08, 1, -5.43332774e-08, -0.999712884, 6.85123425e-08, -0.0239616893)
 	end
 })
 
@@ -113,6 +120,10 @@ Tab:AddButton({
 	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-493.738251, 9.00000858, 174.193192, -0.0099964682, -2.32118573e-08, -0.999950051, -3.75259894e-08, 1, -2.2837872e-08, 0.999950051, 3.72958162e-08, -0.0099964682)
 	end
+})
+
+local Section = Tab:AddSection({
+	Name = "Farlands"
 })
 
 Tab:AddButton({
@@ -228,7 +239,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield
 })
 
 local Tab = Window:MakeTab({
-	Name = "Client Sided Stuff",
+	Name = "Client Sided Stuf",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -243,3 +254,32 @@ Tab:AddTextbox({
 	end	  
 })
 
+local Tab = Window:MakeTab({
+	Name = "ClientBlade",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "Blade Cosmetic for StarFish",
+	Default = "blade name",
+	TextDisappear = true,
+	Callback = function(miskanar)
+	local FireSword = workspace.miskanar.sword.Cosmetics.Blade
+	FireSword.Value = (miskanar)
+	end	  
+})
+
+Tab:AddTextbox({
+	Name = "Blade Cosmetic for DEQUAL604",
+	Default = "blade name",
+	TextDisappear = true,
+	Callback = function(username10)
+	local FireSword = workspace.Inflamation_3.sword.Cosmetics.Blade
+	FireSword.Value = (username10)
+	end	  
+})
+
+Tab:AddParagraph("Blade Names","BricklandianFireBlade , BricklandianIceBlade , DefaultBlade , FarlanderBlade , FarlanderFireBlade , FarlanderIceBlade , NoobKingBlade , VikingKingBlade")
+
+Tab:AddParagraph("PULL OUT YOUR SWORD AND ENTER NAME TO USE!","hi starfish")
