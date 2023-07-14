@@ -24,13 +24,16 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddButton({
-	Name = "Kill Sword [ INSANE LOL ]",
+
+Tab:AddBind({
+	Name = "Kill Sword [ OP ]",
+	Default = Enum.KeyCode.F,
+	Hold = false,
 	Callback = function()
-      		while wait(0.025) do 
+	   		while wait(0.025) do 
 		game:GetService("Players").LocalPlayer.Character.sword.HeavyAttack:FireServer()
 	end
-  	end    
+	end    
 })
 
 
