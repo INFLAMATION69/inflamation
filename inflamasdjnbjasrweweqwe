@@ -73,9 +73,59 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1203.402
 Tab:AddButton({
 	Name = "Teleport to Brick God",
 	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1530.80042, 110.000038, 486.43634, 0.999944329, -7.36276651e-10, 0.0105492352, -9.54563945e-12, 1, 7.06991301e-08, -0.0105492352, -7.06952932e-08, 0.999944329)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1509.64832, 115.999939, 524.155151, 0.97005558, -3.81395324e-08, 0.242883027, 3.57084069e-08, 1, 1.44118451e-08, -0.242883027, -5.30732525e-09, 0.97005558)
 	end
 })
+
+Tab:AddButton({
+	Name = "Teleport to Peasant Village Spawn",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-376.058899, 23.0000401, 17.9136086, -0.013250988, 7.90700554e-08, 0.999912202, 6.63332926e-08, 1, -7.81979423e-08, -0.999912202, 6.52912675e-08, -0.013250988)
+	end
+})
+
+Tab:AddButton({
+	Name = "Teleport to Castle Roof, i think",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1411.06958, 85.0000534, -427.072754, -0.999938548, -8.37412202e-08, -0.0110878982, -8.34718179e-08, 1, -2.4759931e-08, 0.0110878982, -2.38328806e-08, -0.999938548)
+	end
+})
+
+Tab:AddButton({
+	Name = "Teleport to Bricklandia Port 1",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-459.955261, 9.00000858, 285.92868, -0.999917626, -2.3553266e-08, -0.0128361396, -2.40385472e-08, 1, 3.76516383e-08, 0.0128361396, 3.7957097e-08, -0.999917626)
+	end
+})
+
+Tab:AddButton({
+	Name = "Teleport to Bricklandia Port 2",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-318.527344, 10.0000086, -282.329529, 0.0123499706, -2.85349184e-08, -0.999923766, -2.40426221e-08, 1, -2.88340427e-08, 0.999923766, 2.43968881e-08, 0.0123499706)
+	end
+})
+
+Tab:AddButton({
+	Name = "Teleport to Bread Seller (BP)",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-493.738251, 9.00000858, 174.193192, -0.0099964682, -2.32118573e-08, -0.999950051, -3.75259894e-08, 1, -2.2837872e-08, 0.999950051, 3.72958162e-08, -0.0099964682)
+	end
+})
+
+Tab:AddButton({
+	Name = "Teleport to Bread Seller (FL)",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(902.625183, 10.0000582, 41.9081078, 0.00202649995, 3.2844266e-08, 0.999997973, 4.49905926e-08, 1, -3.29355068e-08, -0.999997973, 4.5057245e-08, 0.00202649995)
+	end
+})
+
+Tab:AddButton({
+	Name = "Teleport to Whalinator Quest",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(812.645813, 27.9997501, -884.27948, 0.0352061652, -4.54022846e-08, 0.999380052, 5.53708119e-08, 1, 4.34798437e-08, -0.999380052, 5.38057279e-08, 0.0352061652)
+	end
+})
+
 
 local Tab = Window:MakeTab({
 	Name = "Buy Stuff",
