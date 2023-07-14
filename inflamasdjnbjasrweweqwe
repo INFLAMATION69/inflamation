@@ -24,6 +24,13 @@ Tab:AddButton({
   	end    
 })
 
+Tab:AddButton({
+	Name = "[ INF STAMINA ]",
+	Callback = function()
+game.Players.LocalPlayer.Character.Stamina.Max.Value = 10000000
+game.Players.LocalPlayer.Character.Stamina.Value = 10000000
+  	end    
+})
 
 Tab:AddBind({
 	Name = "Kill Sword [ OP ]",
